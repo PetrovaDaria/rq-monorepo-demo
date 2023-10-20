@@ -17,7 +17,14 @@ sometimes it is occurring and sometimes it is disappearing.
 
 ![screenshot.png](./static/screenshot.png)
 
-### Attempts to solve it
+
+### How to reproduce it
+1. `yarn install`
+2. `yarn dev`
+3. Go to http://localhost:51200 and http://localhost:51300
+4. Uninstall `@suspensive/react` and `@suspensive/react-query`and do steps 1-3 again to see that problem disappeared. 
+
+### Our attempts to solve it
 1. We deleted \<ReactQueryDevtools/> and everything started
 to work. But that's definitely not a solution because
 we need to devtools.
@@ -31,3 +38,5 @@ be restricted by this bug.
 dependency `@suspensive/react-query`. We tried to remove it
 and everything worked. So it seems that the root of the
 problem somewhere inside this package.
+
+
