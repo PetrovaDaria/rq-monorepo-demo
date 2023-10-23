@@ -7,7 +7,9 @@ We have a monorepository on the base of `turborepo`,
 every app is run locally and build by `vite`. Both apps 
 use `react-query`, and they can have different versions 
 of it because this dep defined in apps' package.json, 
-not in a root one.
+not in a root one. Real project has several packages 
+but they don't use `react-query` therefore I didn't
+reproduce them in this example.
 
 ### Problem
 Everything worked fine until at some point we started to 
